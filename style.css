@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Roboto:wght@100;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: .6em solid #002c72;
+    box-shadow: 0 .5em 1.8em #002c72;
+}
+
+.background{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.background img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .3;
+}
+
+.menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: #373B44;
+    background: -webkit-linear-gradient(to right, #002c72, #043a91); 
+    background: linear-gradient(to right, #002c72, #043a91);
+    font-size: 1.2em;
+}
+.menu ul{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.menu ul a{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: .8em;
+    color: white;
+    transition: .3s;
+}
+
+.menu ul a:hover{
+    background: #001b47;
+}
+
+.cabecalho{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.cabecalho h1{
+    font-size: 3em;
+    margin-bottom: 2%;
+}
+
+strong{
+    color: #2f75e7;
+}
+
+em{
+    color: #2f75e7;
+}
+
+main{
+    background: #373B44;
+    background: -webkit-linear-gradient(to right, #002c72, #043a91); 
+    background: linear-gradient(to right, #002c72, #043a91);
+}
+
+h3{
+    font-family: 'Anton', sans-serif;
+}
+
+.conhecimentos{
+    width: 100%;
+    height: 50vh;
+    background-color: #C5C5C5
+}
+
+.conhecimentos h3{
+    color: #002c72;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.conhecimentos .bloco{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: center;
+}
+.elementos{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    width: 28vh;
+    height: 10vh;
+    position: relative;
+    text-align: center;
+    gap: 4%;
+    justify-content: center;
+    border-radius: 0 1em 1em 1em;
+    background: #373B44;
+    background: -webkit-linear-gradient(to right, #002c72, #043a91); 
+    background: linear-gradient(to right, #002c72, #043a91);
+}
+
+
+.projetos{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.projetos h4{
+    color: #2f75e7;
+}
+
+.container{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cartoes{
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.card{
+    display: inline-block;
+    width: 20%;
+    transition: .5s;
+    border-radius: 1.2em;
+    box-shadow: -0.3em 0.3em .6em #000;
+    overflow: hidden;
+}
+
+.card:hover{
+   transform: scale(1.06);
+    box-shadow: -0.5em 0.5em .8em #000;
+
+}
+
+#meio{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.titulo_projetos{
+    display: block;
+    margin-bottom: 6%;
+    position: relative;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.imagens{
+    background-color: #000;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 1.2em;
+}
+
+.imagens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+    transition: .5s;
+}
+
+.card:hover .imagens img{
+    opacity: .25;
+}
+
+
+.legenda{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    opacity: 20%;
+    top: 100%;
+    padding: 4%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.legenda h4{
+    margin-bottom: 10%;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.legenda p{
+    text-align: justify;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card:hover .legenda{
+    display: block;
+    position: absolute;
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.contato{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #C5C5C5;
+    font-size: 2.5em;
+    color: #002c72;
+}
+
+.contato .container_contato{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+}
+
+.icones{
+    
+    display: flex;
+    position: relative;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #373B44;
+    background: -webkit-linear-gradient(to right, #002c72, #043a91); 
+    background: linear-gradient(to right, #002c72, #043a91);
+}
+
+a{
+    color: white;
+}
+
+.icones{
+    transition: 0.3s;
+}
+
+#icon1, #icon2, #icon3{
+    margin-right: 2%;
+}
+
+.icones:hover{
+    transform: scale(1.2);
+}
